@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+
 /**
  * @author wangyuanqing1
  * 2021/5/19
@@ -16,4 +18,5 @@ import lombok.NoArgsConstructor;
 public class User {
     private String name;
     private Integer age;
+    private Date birthday;
 }
