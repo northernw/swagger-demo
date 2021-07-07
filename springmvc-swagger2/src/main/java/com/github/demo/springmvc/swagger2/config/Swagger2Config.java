@@ -1,4 +1,4 @@
-package com.github.demo.swagger2.config;
+package com.github.demo.springmvc.swagger2.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,7 +1,7 @@
-package com.github.demo.easy.web;
+package com.github.demo.springmvc.swagger2.web;
 
-import com.github.demo.easy.entity.ApiResponse;
-import com.github.demo.easy.entity.User;
+import com.github.demo.springmvc.swagger2.entity.User;
+import com.github.demo.springmvc.swagger2.entity.ApiResponse;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;

@@ -1,4 +1,4 @@
-package com.github.demo.swagger2.entity;
+package com.github.demo.springmvc.swagger2.entity;
 
 import io.swagger.annotations.ApiModel;
 import lombok.AllArgsConstructor;

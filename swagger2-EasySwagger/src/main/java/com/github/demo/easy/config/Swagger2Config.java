@@ -1,5 +1,6 @@
 package com.github.demo.easy.config;
 
+import com.swagger2.easyswagger.annotation.EnableEasySwagger;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
@@ -16,6 +17,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  */
 @Configuration
 @EnableSwagger2
+@EnableEasySwagger
 public class Swagger2Config {
 
     /**
@@ -31,7 +33,7 @@ public class Swagger2Config {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.github.demo"))
+                .apis(RequestHandlerSelectors.basePackage("com.github.demo.easy"))
                 .paths(PathSelectors.any())
                 .build();
     }

@@ -1,24 +1,19 @@
 package com.github.demo.easy.entity;
 
-import io.swagger.annotations.ApiModel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * 通用响应
- *
- * @author wangyuanqing1
- * 2021/5/20
+ * 通用响应对象
  */
-@ApiModel(description = "通用返回对象")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 public class ApiResponse<T> {
-    private Integer code;
-    private Boolean success;
-    private T data;
+    private Integer code; // 编码
+    private Boolean success; // 是否成功
+    private T data; // 数据
 }

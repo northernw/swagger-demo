@@ -1,27 +1,39 @@
 package com.github.demo.easy.entity;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
+ * 用户实体
+ *
  * @author wangyuanqing1
  * 2021/5/19
  */
-@ApiModel(description = "用户对象")
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 @Data
 public class User {
-    @ApiModelProperty(value = "姓名")
-    private String name;
+    /**
+     * 姓名
+     */
+    private String name; // 姓名
+    /**
+     * 年龄
+     */
     private Integer age;
+    /**
+     * 用户操作实体
+     */
     private UserOperation userOperation;
 
+    /**
+     * 昵称
+     *
+     * @return
+     */
     public String getNickName() {
         return name + "-nickname";
     }

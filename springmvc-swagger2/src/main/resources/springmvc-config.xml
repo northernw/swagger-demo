@@ -8,7 +8,7 @@
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
     <!-- 开启spring的扫描注入，使用如下注解 -->
-    <context:component-scan base-package="com.jd.ads.demo"/>
+    <context:component-scan base-package="com.github.demo"/>
 
     <!-- 开启springMVC的注解驱动，使得url可以映射到对应的controller -->
     <mvc:annotation-driven/>

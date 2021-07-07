@@ -1,13 +1,11 @@
 package com.github.demo.easy.entity;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 /**
+ * 用户操作实体
+ *
  * @author wangyuanqing1
  * @date 2021/7/6
  */
-@ApiModel(description = "用户操作")
 public class UserOperation {
     private User target;
 
@@ -15,11 +13,20 @@ public class UserOperation {
         this.target = target;
     }
 
-    @ApiModelProperty("添加")
+    /**
+     * 是否能添加
+     *
+     * @return
+     */
     public Boolean getAdd() {
         return Boolean.TRUE;
     }
 
+    /**
+     * 是否能修改
+     *
+     * @return
+     */
     public Boolean getModify() {
         return Boolean.TRUE;
     }
